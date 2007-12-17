@@ -11,7 +11,6 @@ License:	GPL
 URL:		http://peng.apinc.org
 Source:		http://download.penggy.org/sources/%{name}-%{version}.tar.bz2
 Patch0:		penggy-modem.patch.bz2
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	guile-devel
 
 %description
