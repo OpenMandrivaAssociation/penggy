@@ -2,7 +2,7 @@
 %define version 0.2.1
 %define release %mkrel 4
 
-Summary:	Penggy is a free UNIX client for AOL
+Summary:	Free UNIX client for AOL
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
