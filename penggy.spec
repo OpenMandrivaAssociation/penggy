@@ -14,6 +14,7 @@ Patch0:		penggy-modem.patch
 Patch1:		penggy-0.2.1-link.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	guile-devel
+BuildRequires:	gettext-devel
 
 %description
 Penggy is a free UNIX client for AOL. It allows UNIX users to connect
