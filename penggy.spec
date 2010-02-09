@@ -10,7 +10,8 @@ Group:		Networking/Remote access
 License:	GPL
 URL:		http://peng.apinc.org
 Source:		http://download.penggy.org/sources/%{name}-%{version}.tar.bz2
-Patch0:		penggy-modem.patch.bz2
+Patch0:		penggy-modem.patch
+Patch1:		penggy-0.2.1-link.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	guile-devel
 
@@ -19,18 +20,19 @@ Penggy is a free UNIX client for AOL. It allows UNIX users to connect
 to the Internet using AOL, through an IP tunneling system.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
-%setup
-
+%setup -q
 %patch0 -p1
+%patch1 -p0 -b .link
 
 %build
-%configure --target="" --enable-dsl --enable-flap --enable-cable
+autoreconf -fi
+%configure2_5x --target="" --enable-dsl --enable-flap --enable-cable
 
 %make
 
 %install
-%makeinstall
+rm -fr %buildroot
+%makeinstall_std
 %find_lang %{name}
 
 %post
