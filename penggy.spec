@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Group:		Networking/Remote access
 License:	GPL
-URL:		http://peng.apinc.org
+URL:		https://peng.apinc.org
 Source:		http://download.penggy.org/sources/%{name}-%{version}.tar.bz2
 Patch0:		penggy-modem.patch
 Patch1:		penggy-0.2.1-link.patch
