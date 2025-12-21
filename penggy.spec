@@ -13,6 +13,11 @@ Source:		http://download.penggy.org/sources/%{name}-%{version}.tar.bz2
 Patch0:		penggy-modem.patch
 Patch1:		penggy-0.2.1-link.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	guile-devel
 BuildRequires:	gettext-devel
 
