@@ -1,6 +1,6 @@
 %define name penggy
 %define version 0.2.1
-%define release %mkrel 9
+%define release 10
 
 Summary:	UNIX client for AOL
 Name:		%{name}
